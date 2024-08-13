@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { driverObj } from "../components/StartTour";
 import HeaderBar from "../components/HeaderBar";
+import SideBar from "../components/Sidebar";
+import SubView from "../components/SubView";
 
 function OneBox() {
   const Navigate = useNavigate();
@@ -33,27 +35,17 @@ function OneBox() {
   if (selectedComponent === null) {
     return (
       <div className="h-screen w-screen dark:bg-black bg-white pl-14">
-        {/* <SideBar onMenuItemClick={handleMenuItemClick} /> */}
+        <SideBar onMenuItemClick={handleMenuItemClick} />
         <HeaderBar />
-        {/* <SubView /> */}
+        <SubView />
       </div>
     );
   }
 
   return (
     <div className="h-screen w-screen dark:bg-black bg-white pl-14">
-      {/* <SideBar onMenuItemClick={handleMenuItemClick} /> */}
+      <SideBar onMenuItemClick={handleMenuItemClick} />
       <HeaderBar />
-      {/* <div>
-        Render the selected component
-        {selectedComponent === "/" && <SubView />}
-        {selectedComponent === "/search" && <SubView />}
-        {selectedComponent === "/mail" && <SubView />}
-        {selectedComponent === "/send" && <SubView />}
-        {selectedComponent === "/stack" && <SubView />}
-        {selectedComponent === "/inbox" && <MainPage />}
-        {selectedComponent === "/stacks" && <SubView />}
-      </div> */}
     </div>
   );
 }
