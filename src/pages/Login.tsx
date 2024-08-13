@@ -13,7 +13,7 @@ function Login() {
   const handleGoogleLogin = () => {
     // Redirect to  login URL
     window.location.href =
-      "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000/";
+      "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:5174/";
   };
 
   return (
