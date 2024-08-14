@@ -5,14 +5,15 @@ import google from "../assets/google.svg";
 function Login() {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
-  const redirectUrl = "onebox-chi.vercel.app";
+
   if (token) {
     navigate("/");
   }
 
   const handleGoogleLogin = () => {
     // Redirect to  login URL
-    window.location.href = `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://${redirectUrl}/`;
+    window.location.href =
+      "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:5173/";
   };
 
   return (
