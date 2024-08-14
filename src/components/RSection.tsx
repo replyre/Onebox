@@ -3,7 +3,7 @@ import mail from "../assets/mail.svg";
 import { IoMailOpen } from "react-icons/io5";
 function RSection() {
   return (
-    <div className="border-l-2 bg-white dark:bg-black dark:border-[#33383F] border-[#E0E0E0]  h-fit overflow-y-scroll no-scrollbar px-2">
+    <div className="border-l-2 bg-white dark:bg-black dark:border-[#33383F] border-[#E0E0E0] h-full overflow-y-scroll no-scrollbar px-2">
       <div className="mt-5 dark:bg-[#23272C] bg-[#ECEFF3] text-black dark:text-white rounded-lg py-2 pl-4">
         Lead Details
       </div>
