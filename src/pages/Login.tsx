@@ -5,7 +5,7 @@ import google from "../assets/google.svg";
 function Login() {
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
- const redirectUrl = "https://onebox-chi.vercel.app/";
+ const redirectUrl = "onebox-chi.vercel.app/";
   if (token) {
     navigate("/");
   }
@@ -13,7 +13,7 @@ function Login() {
   const handleGoogleLogin = () => {
     // Redirect to  login URL
     window.location.href =
-      `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://${redirectUrl}/`;
+      `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://${redirectUrl}/`;
   };
 
   return (
